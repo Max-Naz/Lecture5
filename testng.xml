@@ -6,23 +6,12 @@
         <classes>
             <class name="com.qatestlab.tests.PlaceOrderTest" />
         </classes>
-</test>
-    <!--
-<test name="Create New Order [Remote-Chrome]" >
-    <parameter name="selenium.browser" value="remote-chrome" />
-    <parameter name="selenium.grid" value="http://localhost:4444/wd/hub" />
-    <classes>
-        <class name="com.qatestlab.tests.PlaceOrderTest" />
-    </classes>
-</test>
-<test name="Create New Order [Remote-Firefox]" >
-    <parameter name="selenium.browser" value="remote-firefox" />
-    <parameter name="selenium.grid" value="http://localhost:4444/wd/hub" />
-    <classes>
-        <class name="com.qatestlab.tests.PlaceOrderTest" />
-    </classes>
-</test>
--->
+    </test>
 
-<!--Configure tests for other browser types-->
+    <test name="Create New Order [Desktop-Chrome]" >
+        <parameter name="selenium.browser" value="chrome" />
+        <classes>
+            <class name="com.qatestlab.tests.PlaceOrderTest" />
+        </classes>
+    </test>
 </suite>
