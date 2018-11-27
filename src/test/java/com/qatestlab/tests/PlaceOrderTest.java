@@ -12,7 +12,7 @@ public class PlaceOrderTest extends BaseTest {
     }
 
     @Test
-    public void createNewOrder() {
+    public void createNewOrder() throws InterruptedException {
         System.out.println("createNewOrder test method.");
         // TODO implement order creation test
 
@@ -22,8 +22,13 @@ public class PlaceOrderTest extends BaseTest {
         actions.openRandomProduct();
 
         // save product parameters
+        actions.saveProductInfo();
 
         // add product to Cart and validate product information in the Cart
+        actions.addProductToCart();
+        actions.proceedToCart();
+        actions.validateProductDataInCart();
+        actions.proceedToOrderCreation();
 
         // proceed to order creation, fill required information
 
